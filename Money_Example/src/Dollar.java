@@ -27,10 +27,13 @@ public class Dollar extends Money{
 		}
 	
 	//returns object without changing actual amount
+//	Money times(int multiplier) {
+//		//amount *= multiplier;
+//		//return null;
+//		return new Dollar(amount * multiplier);
+//		}
 	Money times(int multiplier) {
-		//amount *= multiplier;
-		//return null;
-		return new Dollar(amount * multiplier);
+		return new Money(amount * multiplier, currency);
 		}
 	String currency() {
 		return "USD";
