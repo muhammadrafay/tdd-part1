@@ -1,0 +1,17 @@
+
+public class Franc {
+	private int amount=0;
+	////Chapter 5
+	Franc(int amount) {
+		this.amount= amount;
+		}
+	
+	Franc times1(int multiplier) {
+		return new Franc(this.amount * multiplier);
+		}
+	
+	public boolean equals(Object object) {
+		Franc franc= (Franc) object;
+		return amount == franc.amount;
+		}
+}

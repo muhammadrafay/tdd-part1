@@ -1,0 +1,13 @@
+
+public class Franc {
+	int amount=0;
+	
+	Franc(int amount) {
+		this.amount= amount;
+		}
+	
+	Franc times1(int multiplier) {
+		return new Franc(this.amount * multiplier);
+		}
+	
+}

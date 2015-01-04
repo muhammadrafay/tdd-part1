@@ -1,0 +1,8 @@
+
+public class Franc {
+	private int amount=0;
+	
+	Franc(int amount) {
+		this.amount= amount;
+		}
+}

@@ -6,13 +6,13 @@ public class Dollar {
 	
 	Dollar(int amount) {
 		this.amount= amount;
-		this.pvt_amount= this.amount;
+		this.setPvt_amount(amount);
 		}
 	
 	//changes the amount of the object
 	void times(int multiplier) {
 		amount *= multiplier;
-		pvt_amount *= multiplier;
+		setPvt_amount(getPvt_amount() * multiplier);
 		}
 	
 	//returns object without changing actual amount
@@ -26,4 +26,12 @@ public class Dollar {
 		Dollar dollar= (Dollar) object;
 		return amount == dollar.amount;
 		}
+
+	public int getPvt_amount() {
+		return pvt_amount;
+	}
+
+	public void setPvt_amount(int pvt_amount) {
+		this.pvt_amount = pvt_amount;
+	}
 }

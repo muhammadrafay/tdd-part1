@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class FrancTest {
+	
+	@Test
+	public void testFrancMultiplication() {
+		Franc five= new Franc(5);
+		assertTrue(new Franc(5).equals(new Franc(5))); //case true
+		assertTrue(new Franc(10).equals(five.times1(2))); //case true
+		assertEquals(new Franc(10), five.times1(2));
+		assertEquals(new Franc(15), five.times1(3));
+
+		}
+}
