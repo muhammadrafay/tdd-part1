@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCases" project="Money_Example" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="TestCases" time="0.004">
-    <testcase name="testMultiplicationChap1" classname="TestCases" time="0.003"/>
-    <testcase name="testMultiplicationChap2" classname="TestCases" time="0.0"/>
-    <testcase name="testMultiplicationChap4" classname="TestCases" time="0.0"/>
-    <testcase name="testEqualityChap3" classname="TestCases" time="0.001"/>
-  </testsuite>
-</testrun>
