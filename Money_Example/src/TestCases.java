@@ -39,4 +39,22 @@ public class TestCases {
 		assertTrue(new Dollar(5).equals(new Dollar(5))); //case true
 		assertFalse(new Dollar(5).equals(new Dollar(6))); // case false
 	}
+	
+	@Test
+	public void testMultiplicationChap4() {
+		Dollar five= new Dollar(5);
+//		Dollar product= five.times(2);
+//		assertEquals(10, product.amount);
+//		product= five.times(3);
+//		assertEquals(15, product.amount);
+//		
+		////rewrite for objects 
+//		assertEquals(new Dollar(10), product);
+//		product= five.times(3);
+//		assertEquals(new Dollar(15), product);
+		
+		////no need to create temp obj
+		assertEquals(new Dollar(10), five.timesReturnDollar(2));
+		assertEquals(new Dollar(15), five.timesReturnDollar(3));
+		}
 }
