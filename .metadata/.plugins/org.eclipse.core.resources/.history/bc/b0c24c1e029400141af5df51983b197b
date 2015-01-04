@@ -6,6 +6,6 @@ public class Money {
 		//Dollar dollar= (Dollar) object;
 		//return amount == dollar.amount;
 		Money money= (Money) object;
-		return amount == money.amount && getClass().equals(money.getClass()); //to compare money and francs
+		return amount == money.amount;
 		}
 }
