@@ -9,7 +9,7 @@ public class TestCases {
 		// //**********Chap1**********////
 		// //*************************////
 		Dollar five = new Dollar(5);
-		 five.times(2); //5*2=10
+		 five.times1(2); //5*2=10
 		 assertEquals(10, five.get_amount());
 	}
 	
@@ -27,9 +27,9 @@ public class TestCases {
 
 		// //making another object does not change the value of amount in Dollar
 		// five object
-		Dollar product = five.timesReturnDollar(2); // 5*2=10 returns object
+		Dollar product = (Dollar) five.times(2); // 5*2=10 returns object
 		assertEquals(10, product.get_amount());
-		product = five.timesReturnDollar(3); // 5*3=15 returns object
+		product = (Dollar) five.times(3); // 5*3=15 returns object
 		assertEquals(15, product.get_amount());
 	}
 
@@ -54,7 +54,7 @@ public class TestCases {
 //		assertEquals(new Dollar(15), product);
 		
 		////no need to create temp obj
-		assertEquals(new Dollar(10), five.timesReturnDollar(2));
-		assertEquals(new Dollar(15), five.timesReturnDollar(3));
+		assertEquals(new Dollar(10), five.times(2));
+		assertEquals(new Dollar(15), five.times(3));
 		}
 }

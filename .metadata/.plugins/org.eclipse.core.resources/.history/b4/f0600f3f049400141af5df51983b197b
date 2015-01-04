@@ -1,0 +1,19 @@
+
+abstract class Money {
+	protected int amount;
+	
+	public boolean equals(Object object) {		
+		Money money= (Money) object;
+		return amount == money.amount && getClass().equals(money.getClass()); //to compare money and francs
+		}
+	
+	static Dollar dollar(int amount) {
+		return new Dollar(amount);
+		}
+	
+	public void testMultiplication() {
+		Money five = Money.dollar(5);
+		assertEquals(new Dollar(10), five.times(2));
+		assertEquals(new Dollar(15), five.times(3));
+		}
+}
