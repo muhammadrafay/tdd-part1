@@ -10,7 +10,7 @@ public class TestCases {
 		// //*************************////
 		Dollar five = new Dollar(5);
 		 five.times(2); //5*2=10
-		 assertEquals(10, five.amount);
+		 assertEquals(10, five.get_amount());
 	}
 	
 	@Test
@@ -28,9 +28,9 @@ public class TestCases {
 		// //making another object does not change the value of amount in Dollar
 		// five object
 		Dollar product = five.timesReturnDollar(2); // 5*2=10 returns object
-		assertEquals(10, product.amount);
+		assertEquals(10, product.get_amount());
 		product = five.timesReturnDollar(3); // 5*3=15 returns object
-		assertEquals(15, product.amount);
+		assertEquals(15, product.get_amount());
 	}
 
 	@Test

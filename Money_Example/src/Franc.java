@@ -1,6 +1,6 @@
 
-public class Franc {
-	private int amount=0;
+public class Franc extends Money{
+	//private int amount=0;
 	////Chapter 5
 	Franc(int amount) {
 		this.amount= amount;
@@ -10,8 +10,8 @@ public class Franc {
 		return new Franc(this.amount * multiplier);
 		}
 	
-	public boolean equals(Object object) {
-		Franc franc= (Franc) object;
-		return amount == franc.amount;
-		}
+//	public boolean equals(Object object) {
+//		Franc franc= (Franc) object;
+//		return amount == franc.amount;
+//		}
 }

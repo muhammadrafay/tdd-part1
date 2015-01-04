@@ -1,0 +1,11 @@
+
+public class Money {
+	protected int amount;
+	
+	public boolean equals(Object object) {
+		//Dollar dollar= (Dollar) object;
+		//return amount == dollar.amount;
+		Money money= (Money) object;
+		return amount == money.amount;
+		}
+}
