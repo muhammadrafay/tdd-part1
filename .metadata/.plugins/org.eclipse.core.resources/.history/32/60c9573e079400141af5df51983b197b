@@ -4,19 +4,12 @@ public class Dollar extends Money{
 	//public int amount=0;
 	//private int pvt_amount=0; // made pvt for chap 4 as as of chap 10 dollar is the only class accessing it
 	//private int amount=0; // made pvt for chap 4 as as of chap 10 dollar is the only class accessing it
+	private String currency;
 	
 	Dollar(int amount) {
 		//this.amount= amount;
 		//this.pvt_amount=amount;
 		this.amount=amount;
-		this.currency = "USD";
-		}
-	
-	Dollar(int amount,String currency) {
-		//this.amount= amount;
-		//this.pvt_amount=amount;
-		this.amount=amount;
-		this.currency = currency;
 		}
 	
 	//changes the amount of the object

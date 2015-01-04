@@ -9,7 +9,7 @@ public class Dollar extends Money{
 		//this.amount= amount;
 		//this.pvt_amount=amount;
 		this.amount=amount;
-		this.currency = "USD";
+		currency = "USD";
 		}
 	
 	Dollar(int amount,String currency) {

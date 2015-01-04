@@ -16,9 +16,5 @@ abstract class Money {
 		}
 	
 	abstract Money times(int multiplier);
-	
-	protected String currency;
-	String currency() {
-	return currency;
-	}
+	abstract String currency();
 }
