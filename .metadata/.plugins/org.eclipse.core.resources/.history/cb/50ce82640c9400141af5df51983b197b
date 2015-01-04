@@ -20,10 +20,6 @@ public class Franc extends Money{
 		return "CHF";
 		}
 	
-	static Money franc(int amount){
-		return new Money(amount, "CHF");
-		}
-	
 //	public boolean equals(Object object) {
 //		Franc franc= (Franc) object;
 //		return amount == franc.amount;
